@@ -1,12 +1,11 @@
 # Tools
 
-A collection of small, self-contained HTML and TypeScript tools.
+Miscellaneous HTML+JavaScript tools built mostly with the help of LLMs.
 
 ## Structure
 
 - Root: `.html` files — self-contained browser tools (inline CSS/JS, CDN imports, no build step)
-- `typescript/`: CLI tools and Node/Deno scripts
-- Each tool should be independently usable without setup
+- Each tool should be independently usable — just open the HTML file
 
 ## Development Workflow
 
@@ -27,9 +26,9 @@ Use judgment to plan appropriately for the task:
 
 ## Conventions
 
-- Browser tools: single `.html` file, no external dependencies beyond CDN imports
-- TypeScript tools: use Deno or tsx for execution, keep dependencies minimal
-- Name files with kebab-case: `image-resizer.html`, `json-formatter.ts`
+- Single `.html` file per tool, no external dependencies beyond CDN imports
+- Vanilla JavaScript only — no TypeScript, no build step, no frameworks
+- Name files with kebab-case: `image-resizer.html`, `json-formatter.html`
 - Each tool should have a clear title and brief usage instructions embedded in it
 
 ## After Completing Work
